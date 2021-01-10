@@ -1,0 +1,25 @@
+{
+  "name": "projekt",
+  "version": "1.0.0",
+  "description": "Semester project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "clients": "npm start --prefix clients",
+    "dev": "concurrently \"npm run server\" \"npm run clients\""
+  },
+  "author": "Pratyansh Shashwat",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "config": "^3.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "image-to-base64": "^2.0.1",
+    "mongoose": "^5.9.6",
+    "nodemon": "^2.0.2",
+    "request": "^2.88.2"
+  }
+}
